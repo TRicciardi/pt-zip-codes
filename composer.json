@@ -1,0 +1,30 @@
+{
+    "name": "tricciardi/pt-zip-codes",
+    "description": "Package for importing portuguese zip codes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tiago Ricciardi",
+            "email": "tiago.ricciardi@browserbox.pt"
+        }
+    ],
+    "require": {
+      "league/csv": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "tricciardi\\ptzipcodes\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+            "tricciardi\\ptzipcodes\\PtZipCodesProvider"
+        ]
+      }
+    }
+}
